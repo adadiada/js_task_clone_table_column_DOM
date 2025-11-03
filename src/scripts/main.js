@@ -10,7 +10,8 @@ for (const row of table.rows) {
   }
 
   const rowSecons = cells[1].cloneNode(true);
-  const rowF = cells[4];
+
+  const rowF = cells[cells.length - 1];
 
   row.insertBefore(rowSecons, rowF);
 }
